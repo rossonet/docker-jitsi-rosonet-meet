@@ -4,8 +4,8 @@ metadata:
   name: docker-build-jitsi-base
   namespace: jitsi-dev
   uid: bca7ba50-704c-42c9-925b-2b4fd2e79e38
-  resourceVersion: '4450443'
-  generation: 11
+  resourceVersion: '4453971'
+  generation: 12
   creationTimestamp: '2022-02-07T15:20:26Z'
   labels:
     name: docker-build-jitsi-base
@@ -72,4 +72,4 @@ spec:
         secret: u7566tR4_123e.3
   runPolicy: Serial
 status:
-  lastVersion: 6
+  lastVersion: 7

@@ -1,6 +1,6 @@
-ARG JITSI_REPO=jitsi
+ARG JITSI_REPO=image-registry.openshift-image-registry.svc:5000/jitsi-dev
 ARG BASE_TAG=latest
-FROM ${JITSI_REPO}/base:${BASE_TAG}
+FROM ${JITSI_REPO}/jitsi-rossonet-base:${BASE_TAG}
 
 ENV GOOGLE_APPLICATION_CREDENTIALS /config/key.json
 

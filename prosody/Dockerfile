@@ -1,7 +1,7 @@
-ARG JITSI_REPO=jitsi
+ARG JITSI_REPO=image-registry.openshift-image-registry.svc:5000/jitsi-dev
 ARG BASE_TAG=latest
 
-FROM ${JITSI_REPO}/base:${BASE_TAG} as builder
+FROM ${JITSI_REPO}/jitsi-rossonet-base:${BASE_TAG} as builder
 
 RUN apt-dpkg-wrap apt-get update && \
     apt-dpkg-wrap apt-get install -y \
@@ -16,7 +16,7 @@ RUN apt-dpkg-wrap apt-get update && \
     luarocks install net-url 0.9-1 && \
     luarocks install luajwtjitsi 2.0-0
 
-FROM ${JITSI_REPO}/base:${BASE_TAG}
+FROM ${JITSI_REPO}/jitsi-rossonet-base:${BASE_TAG}
 
 ENV XMPP_CROSS_DOMAIN="false"
 
