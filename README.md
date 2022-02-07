@@ -1,4 +1,4 @@
-# Jitsi Meet on Docker
+# Jitsi Meet on Docker (for Rossonet)
 
 ![](resources/jitsi-docker.png)
 
