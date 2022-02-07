@@ -1,4 +1,4 @@
-ARG JITSI_REPO=jitsi-dev
+ARG JITSI_REPO=image-registry.openshift-image-registry.svc:5000/jitsi-dev
 ARG BASE_TAG=latest
 FROM ${JITSI_REPO}/jitsi-rossonet-base:${BASE_TAG}
 
